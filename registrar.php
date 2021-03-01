@@ -11,22 +11,22 @@ if (isset($_POST['register'])) {
 		$resultado = mysqli_query($conex, $consulta);
 		if ($resultado) {
 ?>
-			<div class="alert alert-success" role="alert">
-				Te has inscrito correctamente
-			</div>
+			<script>
+				alert("registro exitoso");
+			</script>
 		<?php
 		} else {
 		?>
-			<div class="alert alert-danger" role="alert">
-				opps ha ocurrido un error
-			</div>
+			<script>
+				alert("registro exitoso");
+			</script>
 		<?php
 		}
 	} else {
 		?>
-		<div class="alert alert-danger" role="alert">
-			Llenar todos los campos
-		</div>
+		<script>
+			alert("Debes llenar todos los campos");
+		</script>
 <?php
 	}
 }
